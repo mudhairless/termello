@@ -1,0 +1,33 @@
+{
+  "name": "termello",
+  "version": "1.0.0",
+  "description": "Trello Terminal Client",
+  "main": "index.js",
+  "author": "Ebben Feagan",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.8.8",
+    "blessed-vue": "^2.0.1",
+    "node-trello": "^1.3.0",
+    "opn": "^5.4.0",
+    "toml": "^2.3.3",
+    "vue": "^2.5.19",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.19",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "dev": "webpack --progress --hide-modules --watch",
+    "build": "webpack --progress --hide-modules",
+    "runit": "webpack --progress --hide-modules && node dist/build.js"
+  }
+}
